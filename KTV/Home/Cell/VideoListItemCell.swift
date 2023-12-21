@@ -7,10 +7,10 @@
 
 import UIKit
 
-class HomeRecommendItemCell: UITableViewCell {
+class VideoListItemCell: UITableViewCell {
     
     static let height: CGFloat = 71
-    static let identifier: String = "HomeRecommendItemCell"
+    static let identifier: String = "VideoListItemCell"
 
     @IBOutlet weak var contentLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var thumbnailContainerView: UIView!
@@ -37,6 +37,9 @@ class HomeRecommendItemCell: UITableViewCell {
         self.rankLabel.layer.cornerRadius = 5
         self.rankLabel.clipsToBounds = true
         self.playTimeBGView.layer.cornerRadius = 3
+        
+        // MARK: - favorite
+        self.backgroundConfiguration = .clear()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -57,7 +60,7 @@ class HomeRecommendItemCell: UITableViewCell {
     }
     
     // MARK: - my
-    func setData(_ data: Home.Recommend, rank: Int?) {
+    func setData(_ data: VideoListItem, rank: Int?) {
         self.rankLabel.isHidden = rank == nil
         if let rank {
             self.rankLabel.text = "\(rank)"

@@ -288,6 +288,10 @@ extension HomeViewController: HomeRecommendContainerCellDelegate {
     }
     
     func homeRecommendContainerCellFoldChanged(_ cell: HomeRecommendContainerCell) {
+        // tableView vs collectionView
+        // tableView: 정말 간단한 화면을 만들때 사용
+        // collectionView: 유연하고 복잡한 화면을 만들때 사용
+        // 둘 중 collectionView를 사용하는 것을 권장한다.
         self.collectionView.collectionViewLayout.invalidateLayout()
     }
 }
