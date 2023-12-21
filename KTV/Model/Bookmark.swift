@@ -2,7 +2,7 @@
 //  Bookmark.swift
 //  KTV
 //
-//  Created by Lecture on 2023/09/10.
+//  Created by 박준권 on 12/21/23.
 //
 
 import Foundation

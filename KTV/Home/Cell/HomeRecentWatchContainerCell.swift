@@ -8,7 +8,6 @@
 import UIKit
 
 protocol HomeRecentWatchContainerCellDelegate: AnyObject {
-    
     func homeRecentWatchContainerCell(_ cell: HomeRecentWatchContainerCell, didSelectItemAt index: Int)
 }
 

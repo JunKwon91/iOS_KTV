@@ -2,7 +2,7 @@
 //  Home.swift
 //  KTV
 //
-//  Created by Lecture on 2023/09/09.
+//  Created by 박준권 on 12/21/23.
 //
 
 import Foundation

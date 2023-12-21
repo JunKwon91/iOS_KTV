@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol HomeRankingContainerCellDeleate: AnyObject {
+protocol HomeRankingContainerCellDelegate: AnyObject {
     func homeRankingContainerCell(_ cell: HomeRankingContainerCell, didSelectItemAt index: Int)
 }
 
@@ -16,7 +16,7 @@ class HomeRankingContainerCell: UICollectionViewCell {
     static let identifier: String = "HomeRankingContainerCell"
     static let height: CGFloat = 265
     @IBOutlet weak var collectionView: UICollectionView!
-    weak var delegate: HomeRankingContainerCellDeleate?
+    weak var delegate: HomeRankingContainerCellDelegate?
     private var rankings: [Home.Ranking]?
     
     override func awakeFromNib() {
