@@ -166,7 +166,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         case .header, .footer, .ranking, .recentWatch, .recommend:
             return
         case .video:
-            print(".didSelectItemAt case .video")
             self.presentVideoViewController()
         }
     }

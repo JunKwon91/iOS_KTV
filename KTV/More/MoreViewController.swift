@@ -39,6 +39,22 @@ class MoreViewController: UIViewController {
             ),
             forCellReuseIdentifier: MoreTableViewCell.identifier
         )
+        self.setupConerRadius()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.setupConerRadius()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        coordinator.animate { _ in
+            self.setupConerRadius()
+        }
+        
+        super.viewWillTransition(to: size, with: coordinator)
     }
     
     @IBAction func closeDidTap(_ sender: Any) {
