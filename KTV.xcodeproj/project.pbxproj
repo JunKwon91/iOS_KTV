@@ -65,6 +65,18 @@
 		86C5658B2B357C1500F2C170 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5658A2B357C1500F2C170 /* PlayerView.swift */; };
 		86C5658D2B359D6200F2C170 /* SeekbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5658C2B359D6200F2C170 /* SeekbarView.swift */; };
 		86C565902B35A45700F2C170 /* DateComponentsFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5658F2B35A45700F2C170 /* DateComponentsFormatterExtension.swift */; };
+		86C565932B35B3E100F2C170 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565922B35B3E100F2C170 /* LiveViewController.swift */; };
+		86C565962B35B95B00F2C170 /* LiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565942B35B95B00F2C170 /* LiveCell.swift */; };
+		86C565972B35B95B00F2C170 /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C565952B35B95B00F2C170 /* LiveCell.xib */; };
+		86C565992B35BF9600F2C170 /* LiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565982B35BF9600F2C170 /* LiveViewModel.swift */; };
+		86C5659B2B35BFB500F2C170 /* Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5659A2B35BFB500F2C170 /* Live.swift */; };
+		86C5659E2B35C61000F2C170 /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5659D2B35C61000F2C170 /* ChattingView.swift */; };
+		86C565A02B35C64600F2C170 /* ChatSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C5659F2B35C64600F2C170 /* ChatSimulator.swift */; };
+		86C565A22B35C7F300F2C170 /* ChattingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565A12B35C7F300F2C170 /* ChattingViewModel.swift */; };
+		86C565A72B35C81900F2C170 /* LiveChattingMyMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565A32B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.swift */; };
+		86C565A82B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C565A42B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.xib */; };
+		86C565A92B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565A52B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.swift */; };
+		86C565AA2B35C81900F2C170 /* LiveChattingMyMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C565A62B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.xib */; };
 		95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C952AA8B93B007BAD7B /* AppDelegate.swift */; };
 		95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */; };
 		95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C992AA8B93B007BAD7B /* LoginViewController.swift */; };
@@ -152,6 +164,18 @@
 		86C5658A2B357C1500F2C170 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		86C5658C2B359D6200F2C170 /* SeekbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekbarView.swift; sourceTree = "<group>"; };
 		86C5658F2B35A45700F2C170 /* DateComponentsFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsFormatterExtension.swift; sourceTree = "<group>"; };
+		86C565922B35B3E100F2C170 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		86C565942B35B95B00F2C170 /* LiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCell.swift; sourceTree = "<group>"; };
+		86C565952B35B95B00F2C170 /* LiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
+		86C565982B35BF9600F2C170 /* LiveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewModel.swift; sourceTree = "<group>"; };
+		86C5659A2B35BFB500F2C170 /* Live.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
+		86C5659D2B35C61000F2C170 /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
+		86C5659F2B35C64600F2C170 /* ChatSimulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatSimulator.swift; sourceTree = "<group>"; };
+		86C565A12B35C7F300F2C170 /* ChattingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewModel.swift; sourceTree = "<group>"; };
+		86C565A32B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChattingMyMessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		86C565A42B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveChattingMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		86C565A52B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChattingMessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		86C565A62B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveChattingMyMessageCollectionViewCell.xib; sourceTree = "<group>"; };
 		95E70C922AA8B93B007BAD7B /* KTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70C952AA8B93B007BAD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +227,7 @@
 		86C565072B32F35000F2C170 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				86C5659A2B35BFB500F2C170 /* Live.swift */,
 				86C565082B32F35000F2C170 /* Home.swift */,
 				86C565662B34466700F2C170 /* Bookmark.swift */,
 				86C565722B344FF100F2C170 /* Favorite.swift */,
@@ -342,6 +367,31 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		86C565912B35B3C200F2C170 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				86C565922B35B3E100F2C170 /* LiveViewController.swift */,
+				86C565942B35B95B00F2C170 /* LiveCell.swift */,
+				86C565952B35B95B00F2C170 /* LiveCell.xib */,
+				86C565982B35BF9600F2C170 /* LiveViewModel.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		86C5659C2B35C5E200F2C170 /* LiveChatting */ = {
+			isa = PBXGroup;
+			children = (
+				86C5659F2B35C64600F2C170 /* ChatSimulator.swift */,
+				86C5659D2B35C61000F2C170 /* ChattingView.swift */,
+				86C565A12B35C7F300F2C170 /* ChattingViewModel.swift */,
+				86C565A52B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.swift */,
+				86C565A42B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.xib */,
+				86C565A32B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.swift */,
+				86C565A62B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.xib */,
+			);
+			path = LiveChatting;
+			sourceTree = "<group>";
+		};
 		95E70C892AA8B93B007BAD7B = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +416,8 @@
 			isa = PBXGroup;
 			children = (
 				684920CD2AB1FD8C00E5202E /* TabBarController.swift */,
+				86C5659C2B35C5E200F2C170 /* LiveChatting */,
+				86C565912B35B3C200F2C170 /* Live */,
 				86C5658E2B35A40300F2C170 /* Extensions */,
 				86C5657B2B34884600F2C170 /* More */,
 				86C565762B346F3B00F2C170 /* Video */,
@@ -515,6 +567,7 @@
 				95E70CA22AA8B93D007BAD7B /* LaunchScreen.storyboard in Resources */,
 				86C5654A2B32F41200F2C170 /* HomeRecommendContainerCell.xib in Resources */,
 				86C565832B348A7E00F2C170 /* MoreTableViewCell.xib in Resources */,
+				86C565AA2B35C81900F2C170 /* LiveChattingMyMessageCollectionViewCell.xib in Resources */,
 				86C565222B32F3E800F2C170 /* video.json in Resources */,
 				86C565212B32F3E800F2C170 /* live.json in Resources */,
 				68CA313C2AAA292900A744AF /* Color.xcassets in Resources */,
@@ -522,6 +575,8 @@
 				86C5657A2B346F5D00F2C170 /* VideoViewController.xib in Resources */,
 				86C5654C2B32F41200F2C170 /* HomeRecentWatchContainerCell.xib in Resources */,
 				86C565242B32F3E800F2C170 /* home.json in Resources */,
+				86C565972B35B95B00F2C170 /* LiveCell.xib in Resources */,
+				86C565A82B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.xib in Resources */,
 				86C5654E2B32F41200F2C170 /* HomeRankingItemCell.xib in Resources */,
 				86C5656B2B344A0500F2C170 /* BookmarkCell.xib in Resources */,
 				86C565252B32F3E800F2C170 /* bookmark.json in Resources */,
@@ -556,7 +611,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C565A22B35C7F300F2C170 /* ChattingViewModel.swift in Sources */,
 				95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */,
+				86C565A02B35C64600F2C170 /* ChatSimulator.swift in Sources */,
 				86C565652B3445E700F2C170 /* BookmarkViewModel.swift in Sources */,
 				86C565872B348E2800F2C170 /* Video.swift in Sources */,
 				86C565522B32F41200F2C170 /* HomeRankingItemCell.swift in Sources */,
@@ -564,6 +621,7 @@
 				86C565512B32F41200F2C170 /* HomeFooterView.swift in Sources */,
 				86C565632B3444E800F2C170 /* BookmarkViewController.swift in Sources */,
 				684920CE2AB1FD8C00E5202E /* TabBarController.swift in Sources */,
+				86C5659B2B35BFB500F2C170 /* Live.swift in Sources */,
 				86C565532B32F41200F2C170 /* HomeRankingHeaderView.swift in Sources */,
 				86C5656A2B344A0500F2C170 /* BookmarkCell.swift in Sources */,
 				86C565852B348A8500F2C170 /* MoreViewModel.swift in Sources */,
@@ -572,6 +630,8 @@
 				86C565822B348A7E00F2C170 /* MoreTableViewCell.swift in Sources */,
 				86C565902B35A45700F2C170 /* DateComponentsFormatterExtension.swift in Sources */,
 				86C565672B34466700F2C170 /* Bookmark.swift in Sources */,
+				86C565A72B35C81900F2C170 /* LiveChattingMyMessageCollectionViewCell.swift in Sources */,
+				86C565932B35B3E100F2C170 /* LiveViewController.swift in Sources */,
 				86C565452B32F41200F2C170 /* HomeViewModel.swift in Sources */,
 				86C5656D2B344F4E00F2C170 /* VideoListItem.swift in Sources */,
 				86C5655A2B32F41200F2C170 /* HomeRecommendContainerCell.swift in Sources */,
@@ -583,12 +643,16 @@
 				86C565712B344FCD00F2C170 /* FavoriteViewModel.swift in Sources */,
 				86C565732B344FF100F2C170 /* Favorite.swift in Sources */,
 				86C5656F2B344F9E00F2C170 /* FavoriteViewController.swift in Sources */,
+				86C565A92B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.swift in Sources */,
 				86C565892B348E4A00F2C170 /* VideoViewModel.swift in Sources */,
 				86C5657E2B34888000F2C170 /* MoreViewController.swift in Sources */,
 				86C5658D2B359D6200F2C170 /* SeekbarView.swift in Sources */,
 				86C5654D2B32F41200F2C170 /* HomeRecentWatchContainerCell.swift in Sources */,
 				86C565292B32F3F300F2C170 /* DataLoader.swift in Sources */,
+				86C5659E2B35C61000F2C170 /* ChattingView.swift in Sources */,
 				86C5652A2B32F3F300F2C170 /* UIImageView+Task.swift in Sources */,
+				86C565992B35BF9600F2C170 /* LiveViewModel.swift in Sources */,
+				86C565962B35B95B00F2C170 /* LiveCell.swift in Sources */,
 				95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */,
 				86C565582B32F41200F2C170 /* HomeHeaderView.swift in Sources */,
 				86C5658B2B357C1500F2C170 /* PlayerView.swift in Sources */,

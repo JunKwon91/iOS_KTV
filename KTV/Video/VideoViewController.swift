@@ -6,9 +6,11 @@
 //
 
 import UIKit
-
+ 
 class VideoViewController: UIViewController {
 
+    private let chattingHiddenBottomConstraint: CGFloat = -500
+    
     // MARK: - 제어패널
     @IBOutlet weak var playButton: UIButton!
     
@@ -33,6 +35,11 @@ class VideoViewController: UIViewController {
     
     @IBOutlet weak var seekbar: SeekbarView!
     @IBOutlet weak var landscapePlayTimeLabel: UILabel!
+    
+    @IBOutlet weak var chattingView: ChattingView!
+    var isLiveMode: Bool = false
+    
+    @IBOutlet weak var chattingBottomConstraint: NSLayoutConstraint!
     
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -69,17 +76,30 @@ class VideoViewController: UIViewController {
         
         self.seekbar.delegate = self
         self.playerView.delegate = self
+        self.chattingView.delegate = self
         self.channelThumbnailImageView.layer.cornerRadius = 14
         self.setupRecommendTableView()
         self.bindViewModel()
         self.viewModel.request()
+        self.chattingView.isHidden = !self.isLiveMode
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         
+        self.chattingView.textField.resignFirstResponder()
         self.switchControlPannel(size: size)
         self.playerViewBottomConstraint.isActive = self.isLandscape(size: size)
+        
+        if self.isLandscape(size: size) {
+            self.chattingBottomConstraint.constant = self.chattingHiddenBottomConstraint
+        } else {
+            self.chattingBottomConstraint.constant = 0
+        }
          
+        coordinator.animate { _ in
+            self.chattingView.collectionView.collectionViewLayout.invalidateLayout()
+        }
+        
         super.viewWillTransition(to: size, with: coordinator)
     }
     
@@ -107,6 +127,9 @@ class VideoViewController: UIViewController {
     }
     
     @IBAction func commentDidTap(_ sender: Any) {
+        if self.isLiveMode {
+            self.chattingView.isHidden = false
+        }
     }
 }
 
@@ -213,6 +236,13 @@ extension VideoViewController: PlayerViewDelegate {
 extension VideoViewController: SeekBarViewDelegate {
     func seelbar(_ seekbar: SeekbarView, seekToPercent percent: Double) {
         self.playerView.seek(to: percent)
+    }
+}
+
+extension VideoViewController: ChattingViewDelegate {
+    func liveChattingViewCloseDidTap(_ chattingView: ChattingView) {
+//        self.setEditing(false, animated: true)
+        self.chattingView.isHidden = true
     }
 }
 
