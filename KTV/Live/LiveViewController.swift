@@ -91,8 +91,13 @@ extension LiveViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = VideoViewController()
-        vc.isLiveMode = true
-        self.present(vc, animated: true)
+        if let vc = (self.tabBarController as? VideoViewControllerContainer)?.videoViewController {
+            (self.tabBarController as? VideoViewControllerContainer)?.presentCurrentViewController()
+        } else {
+            let vc = VideoViewController()
+            vc.isLiveMode = true
+            vc.delegate = self.tabBarController as? VIdeoViewControllerDelegate
+            self.present(vc, animated: true)
+        }
     }
 }

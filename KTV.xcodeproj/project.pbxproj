@@ -77,6 +77,7 @@
 		86C565A82B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C565A42B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.xib */; };
 		86C565A92B35C81900F2C170 /* LiveChattingMessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565A52B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.swift */; };
 		86C565AA2B35C81900F2C170 /* LiveChattingMyMessageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C565A62B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.xib */; };
+		86C565AC2B3AE8CD00F2C170 /* VideoViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C565AB2B3AE8CD00F2C170 /* VideoViewControllerContainer.swift */; };
 		95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C952AA8B93B007BAD7B /* AppDelegate.swift */; };
 		95E70C982AA8B93B007BAD7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */; };
 		95E70C9A2AA8B93B007BAD7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70C992AA8B93B007BAD7B /* LoginViewController.swift */; };
@@ -176,6 +177,7 @@
 		86C565A42B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveChattingMessageCollectionViewCell.xib; sourceTree = "<group>"; };
 		86C565A52B35C81800F2C170 /* LiveChattingMessageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChattingMessageCollectionViewCell.swift; sourceTree = "<group>"; };
 		86C565A62B35C81800F2C170 /* LiveChattingMyMessageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveChattingMyMessageCollectionViewCell.xib; sourceTree = "<group>"; };
+		86C565AB2B3AE8CD00F2C170 /* VideoViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewControllerContainer.swift; sourceTree = "<group>"; };
 		95E70C922AA8B93B007BAD7B /* KTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70C952AA8B93B007BAD7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E70C972AA8B93B007BAD7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				95E70CA02AA8B93D007BAD7B /* LaunchScreen.storyboard */,
 				95E70CA32AA8B93D007BAD7B /* Info.plist */,
 				86C565742B3455BD00F2C170 /* NavigationController.swift */,
+				86C565AB2B3AE8CD00F2C170 /* VideoViewControllerContainer.swift */,
 			);
 			path = KTV;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				86C5656A2B344A0500F2C170 /* BookmarkCell.swift in Sources */,
 				86C565852B348A8500F2C170 /* MoreViewModel.swift in Sources */,
 				86C565752B3455BD00F2C170 /* NavigationController.swift in Sources */,
+				86C565AC2B3AE8CD00F2C170 /* VideoViewControllerContainer.swift in Sources */,
 				95E70C962AA8B93B007BAD7B /* AppDelegate.swift in Sources */,
 				86C565822B348A7E00F2C170 /* MoreTableViewCell.swift in Sources */,
 				86C565902B35A45700F2C170 /* DateComponentsFormatterExtension.swift in Sources */,
@@ -837,6 +841,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L47Z8FYW3T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -850,7 +855,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fastcampus.KTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastcampus.KTV.nangko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -865,6 +870,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L47Z8FYW3T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -878,7 +884,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fastcampus.KTV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastcampus.KTV.nangko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

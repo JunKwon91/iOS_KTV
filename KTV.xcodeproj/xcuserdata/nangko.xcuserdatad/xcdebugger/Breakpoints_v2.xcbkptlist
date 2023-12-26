@@ -14,8 +14,8 @@
             filePath = "KTV/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>
